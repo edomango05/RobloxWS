@@ -1,0 +1,33 @@
+{
+    "name": "robloxwebserver",
+    "version": "1.0.0",
+    "description": "Pool system to make mongoose and other external utilities communicate with Roblox",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && npm run copy-files"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "POLLOVOLANTE",
+    "license": "ISC",
+    "homepage": "",
+    "dependencies": {
+        "@types/node": "^16.4.2",
+        "cors": "^2.8.5",
+        "debug": "^4.3.2",
+        "discord.js": "^14.2.0",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "glob": "^7.1.7",
+        "mongoose": "^5.13.5"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/debug": "^4.1.7",
+        "@types/express": "^4.17.13",
+        "@types/glob": "^7.1.4",
+        "typescript": "^4.3.5"
+    }
+}
