@@ -48,5 +48,11 @@ To execute **backend**
 ```sh
 node build/server/main.js
 ```
+#### Roblox configuation
+coming soon ...
+
+
+# Usage
+coming soon ...
 # Communication channels
 coming soon ...
