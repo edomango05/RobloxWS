@@ -45,7 +45,7 @@ npm run build
 # Execute
 It is **recommended** to use [pm2](https://pm2.keymetrics.io/) or similar programs to keep a clean and organized environment.
 To execute **backend**
-```
+```sh
 node build/server/main.js
 ```
 # Communication channels
