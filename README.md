@@ -42,15 +42,15 @@ Open **terminal** into the project directory and **execute**
 ```sh
 npm run build
 ```
+#### Roblox configuation
+coming soon ...
+
 # Execute
 It is **recommended** to use [pm2](https://pm2.keymetrics.io/) or similar programs to keep a clean and organized environment.
 To execute **backend**
 ```sh
 node build/server/main.js
 ```
-#### Roblox configuation
-coming soon ...
-
 
 # Usage
 coming soon ...
