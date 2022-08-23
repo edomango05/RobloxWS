@@ -29,7 +29,9 @@ task.spawn(function()
 	while true do
 		local success, data = request("/rest/cache/roblox/", "GET")
 		if success and data.Success then
-			--TODO 
+			--TODO
+        else
+            task.wait(5)
 		end
 	end
 end)
