@@ -5,7 +5,7 @@
 
 ## About
 
-the purpose of this package is to provide a simple handler for communications between Roblox, your webserver and your [MongoDB](https://www.mongodb.com/docs/) database. This project is still an alpha version of the full idea behind this initiative. In the future will be added a pool for income request from backend to Roblox server and a discord bot concept with several features.
+the purpose of this package is to provide a simple handler for communications between Roblox, your webserver and your [MongoDB](https://www.mongodb.com/docs/) database. This project is still an alpha version of the full idea behind this initiative. In the future will be added a pool for income request from backend to Roblox server and a discord bot concept with several features. Check [Milestones](https://github.com/pollovolante/RobloxWS/milestones) !
 
 ## Why should I use it
 
@@ -43,7 +43,7 @@ Open **terminal** into the project directory and **execute**
 npm run build
 ```
 #### Roblox configuation
-coming soon ...
+Create a **ServerScript** into your **ServerScriptService** in studio and put into it a **ModuleScript** . Into `src/ServerScriptService/CoreServer`, copy `init.server.lua` content and paste it into the ServerScript and the DataBase.lua into the ModuleScript. `Is it recommended to import the CoreServer folder into Roblox Studio for an automatic implementation`. Finally change the [IP address](https://github.com/pollovolante/RobloxWS/blob/main/src/ServerScriptService/CoreServer/DataBase.lua#L8) into the Module with your own web server URL.
 
 # Execute
 It is **recommended** to use [pm2](https://pm2.keymetrics.io/) or similar programs to keep a clean and organized environment.
