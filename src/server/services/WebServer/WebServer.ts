@@ -16,7 +16,7 @@ export class ExpressWebServerService extends Service {
   async init() {
     try {
       const globPromise = promisify(glob);
-      const port = 3001
+      const port =  parseInt(process.env.WEBSERVER_PORT!)
       const routeFiles: string[] = await globPromise(
         `${__dirname}/routes/**//*{.ts,.js}`
       );
