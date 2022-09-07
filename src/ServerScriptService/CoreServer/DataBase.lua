@@ -93,6 +93,8 @@ function API.Increase(player,much,method)
 		UpdateClient:FireClient(player,datas[player.UserId].store)
 	end
 end
-
+function API.request(...)
+	return request(...)
+end
 
 return API

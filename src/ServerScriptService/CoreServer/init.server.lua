@@ -25,9 +25,11 @@ game:BindToClose(function()
 	end
 end)
 
+
+
 task.spawn(function()
 	while true do
-		local success, data = request("/rest/cache/roblox/", "GET")
+		local success, data = Services.Database.request("/rest/cache/roblox/", "GET")
 		if success and data.Success then
 			--TODO
         else

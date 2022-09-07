@@ -1,17 +1,22 @@
+
+
 import { Service } from '../ServiceHandler'
 import { json } from 'body-parser'
-import express,{Express} from 'express'
+import express,{Express, Response} from 'express'
 import { promisify } from "util";
 import glob from "glob";
 import { createServer , Server} from "http";
 
+
 export class ExpressWebServerService extends Service {
   app: Express;
   http:Server;
+  
   constructor() {
     super('ExpressWebServer')
     this.app = express()
     this.http = createServer(this.app)
+    
   }
   async init() {
     try {
@@ -20,6 +25,7 @@ export class ExpressWebServerService extends Service {
       const routeFiles: string[] = await globPromise(
         `${__dirname}/routes/**//*{.ts,.js}`
       );
+
       this.app.use(json())
       routeFiles.forEach(async (value: string) => {
         const file = await import(value);
