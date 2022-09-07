@@ -37,6 +37,7 @@ you need to provide some informations in order to make it work. The file you nee
 | **MONGODB_LINK** | provide the URL of your mongoDB database(with user and password if you have one ) | mongodb://user:password@127.0.0.1:27017/ |
 | **WEBSERVER_PORT** | port where express should listen for HTTP request ( watch [this](https://devforum.roblox.com/t/port-restrictions-for-httpservice/1500073) before  ) | 8080 |
 | **RETRY_DB** | how much time should mongoose service wait before a retry connection | 3000 |
+| **ROBLOX_PLACEID** | place id of the experience | 1234567890 |
 #### Build
 Open **terminal** into the project directory and **execute**
 ```sh
