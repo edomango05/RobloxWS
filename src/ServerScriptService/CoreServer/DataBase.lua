@@ -2,6 +2,7 @@ local http = game:GetService("HttpService")
 local ReplicatedStorage = game:GetService('ReplicatedStorage')
 local UpdateClient = ReplicatedStorage.Remotes.UpdateData
 local API = {}
+type PROFILE = {}
 
 local datas:{[string]:PROFILE} = {}
 
@@ -62,7 +63,6 @@ end
 
 function API.SaveData(player)
 	if player and datas[player.UserId] then
-		datas[player.UserId].modlogs = nil
 		local success, data = request("/api/user/"..player.UserId, "PATCH",datas[player.UserId])
 		if not success then
 			return print("Errore nel salvataggio dei dati")

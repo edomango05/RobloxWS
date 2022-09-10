@@ -57,7 +57,7 @@ router.use('/robloxws/*', (req: Request, res: Response) => {
   const id = (new Date()).getTime().toString()
   cache.set(id, {
     hash: id,
-    endpoint: req.url,
+    endpoint: req.originalUrl.replace('/robloxws',''),
     method: req.method,
     response: res,
     headers: req.header,
