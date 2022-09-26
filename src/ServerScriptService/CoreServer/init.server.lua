@@ -8,23 +8,6 @@ for i, v in pairs(script:GetChildren()) do
 	end
 end
 
-Players.PlayerAdded:Connect(function(player)
-	local prop = Services.Database.GetData(player)
-	local document = Services.Database.GetDocument(player)
-end)
-
-Players.PlayerRemoving:Connect(function(player)
-	Services.Database.SaveData(player)
-end)
-
-game:BindToClose(function()
-	for _,plr in pairs(Players:GetPlayers()) do
-		task.spawn(function()
-			Services.Database.SaveData(plr)
-		end)
-	end
-end)
-
 local router = Services.Router.new()
 
 router:get("/helloworld/", function()
@@ -34,7 +17,6 @@ router:get("/helloworld/", function()
 		headers= {}
 	}
 end)
-
 
 task.spawn(function()
 	while true do
